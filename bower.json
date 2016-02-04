@@ -1,0 +1,35 @@
+{
+  "name": "angular-project",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/douglaslira/angular-project",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0"
+  },
+  "authors": [
+    "Douglas Lira <douglas.lira.web@gmail.com>"
+  ],
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "AngularJS",
+    "Javascript",
+    "Boilerplate",
+    "Karma"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
