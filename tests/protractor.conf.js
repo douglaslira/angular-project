@@ -1,7 +1,7 @@
 var jasmineReporters = require('jasmine-reporters');
 exports.config = {
-  baseUrl: 'http://localhost:8000/app/',
-  seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.47.1.jar',
+  baseUrl: 'http://localhost:9876/app/',
+  seleniumServerJar: 'node_modules/protractor/selenium/selenium-server-standalone-2.47.1.jar',
   seleniumPort: 4444,
   seleniumArgs: ['-browserTimeout=60'],
   framework: 'jasmine',
