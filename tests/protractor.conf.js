@@ -7,7 +7,7 @@ exports.config = {
   framework: 'jasmine',
   troubleshoot: false, //true if you want to see actual web-driver configuration
   capabilities: {
-    'browserName': 'PhantomJS',
+    'browserName': 'phantomjs',
     'phantomjs.binary.path': require('phantomjs').path,
     'phantomjs.cli.args': ['--ignore-ssl-errors=true', '--web-security=false']
   },
