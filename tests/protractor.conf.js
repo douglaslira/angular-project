@@ -1,13 +1,13 @@
 var jasmineReporters = require('jasmine-reporters');
 exports.config = {
   baseUrl: 'http://localhost:9876/app/',
-  seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.47.1.jar',
+  seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.47.1.jar',
   seleniumPort: 4444,
   seleniumArgs: ['-browserTimeout=60'],
   framework: 'jasmine',
   troubleshoot: false, //true if you want to see actual web-driver configuration
   capabilities: {
-    'browserName': 'phantomjs',
+    'browserName': 'PhantomJS',
     'phantomjs.binary.path': require('phantomjs').path,
     'phantomjs.cli.args': ['--ignore-ssl-errors=true', '--web-security=false']
   },
