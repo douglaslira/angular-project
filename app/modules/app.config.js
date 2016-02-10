@@ -2,12 +2,12 @@
 
     'use strict';
 
-    angular.module('myApp').config(configApp);
+    angular.module('App').config(configApp);
 
     configApp.$inject = ['$routeProvider'];
 
     function configApp($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/view1'});
+        $routeProvider.otherwise({redirectTo: '/home'});
     }
 
 })();
