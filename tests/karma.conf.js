@@ -7,7 +7,12 @@ module.exports = function(config){
             'bower_components/angular/angular.js',
             'bower_components/angular-route/angular-route.js',
             'bower_components/angular-mocks/angular-mocks.js',
-            'app/**/*/*.js',
+            'app/modules/app.js',
+            'app/components/module.js',
+            'app/components/**/*/*.js',
+            'app/modules/*/module.js',
+            'app/modules/*/{config}.js',
+            'app/modules/*/*/*.js',
             'tests/unit-test/**/*/*.js'
         ],
 
@@ -31,6 +36,6 @@ module.exports = function(config){
         },
         singleRun: false,
         colors: true,
-        logLevel: config.LOG_DEBUG
+        logLevel: config.INFO
     });
 };
