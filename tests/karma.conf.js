@@ -1,8 +1,6 @@
 module.exports = function(config){
     config.set({
-
         basePath : '../',
-
         files : [
             'bower_components/angular/angular.js',
             'bower_components/angular-route/angular-route.js',
@@ -15,27 +13,28 @@ module.exports = function(config){
             'app/modules/*/*/*.js',
             'tests/unit-test/**/*/*.js'
         ],
-
+        reporters: ['progress', 'coverage'],
+        preprocessors: {
+            'app/modules/*/*/*.js': ['coverage'],
+            'app/components/**/*/*.js': ['coverage']
+        },
+        coverageReporter: {
+            type : 'html',
+            dir : 'coverage/'
+        },
         autoWatch : true,
-
         frameworks: ['jasmine'],
-
         browsers : ['PhantomJS'],
-
         plugins : [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
             'karma-junit-reporter',
-            'karma-phantomjs-launcher'
+            'karma-phantomjs-launcher',
+            'karma-coverage'
         ],
-
-        junitReporter : {
-            outputFile: 'test_out/unit.xml',
-            suite: 'unit'
-        },
         singleRun: false,
         colors: true,
-        logLevel: config.INFO
+        logLevel: config.LOG_INFO
     });
 };
