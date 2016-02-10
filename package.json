@@ -25,7 +25,7 @@
     "postinstall": "bower install",
     "start": "http-server -a localhost -p 8000 -c-1",
     "test": "karma start tests/karma.conf.js",
-    "test-single-run": "karma start tests/karma.conf.js  --single-run",
+    "test-single-run": "karma start tests/karma.conf.js --no-auto-watch --single-run",
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",

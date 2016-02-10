@@ -10,8 +10,12 @@ describe('HomeController::Test', function() {
         $controller('HomeController', {$scope: scope});
     }));
 
-    it('should ....', function () {
+    it('should HomeController is dedined', function () {
         expect('HomeController').toBeDefined();
+    });
+
+    it('should check value of hello default', function () {
+        expect(scope.hello).toEqual('Hello World!');
     });
 
 });
